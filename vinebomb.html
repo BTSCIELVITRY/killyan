@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <title>Vine bomb</title>
-    <link rel="stylesheet" href="/css/fish.css" />
+    <link rel="stylesheet" href="fish.css" />
     <meta http-equiv="refresh" content="6; url=/index.html" />
   </head>
   <body>
     <a href="https://neurosama.com" id="goldfishLink">
-      <img id="goldfishImage" src="/image/GoldFishImage.jpg" alt="Goldfish" />
+      <img id="goldfishImage" src="GoldFishImage.jpg" alt="Goldfish" />
     </a>
 
     <script>
@@ -18,7 +18,7 @@
       goldfishImage.addEventListener("click", function (event) {
         event.preventDefault();
 
-        const vineBoom = new Audio("/image/vinebomb.mp3");
+        const vineBoom = new Audio("vinebomb.mp3");
 
         vineBoom.play().catch((error) => {
           console.error("Erreur lors de la lecture de l'audio :", error);
