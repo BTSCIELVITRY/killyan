@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/attaque.css" />
+    <title>Attaque MITM</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Attaque MITM (Man-in-the-Middle)</h1>
+      <p>
+        Une attaque "Man-in-the-Middle" (MITM) permet à un attaquant
+        d’intercepter et de modifier les communications entre deux parties sans
+        leur consentement.
+      </p>
+
+      <h2>Terminologie</h2>
+      <ul>
+        <li>
+          <b>Man-in-the-Middle (MITM) :</b> Un attaquant s'insérant entre deux
+          parties en communication.
+        </li>
+        <li>
+          <b>Interception :</b> Capture des données échangées entre deux
+          entités.
+        </li>
+        <li>
+          <b>Détournement :</b> Modification ou falsification des données
+          interceptées.
+        </li>
+        <li>
+          <b>Point d'accès malveillant :</b> Réseau Wi-Fi falsifié pour tromper
+          les utilisateurs.
+        </li>
+        <li>
+          <b>Certificat SSL falsifié :</b> Faux certificat utilisé pour tromper
+          les navigateurs web.
+        </li>
+      </ul>
+
+      <h2>Comment fonctionne une attaque MITM ?</h2>
+      <p>
+        Une attaque MITM implique qu'un attaquant intercepte et manipule des
+        données transmises entre deux parties qui croient communiquer
+        directement.
+      </p>
+      <ul>
+        <li>
+          L'attaquant intercepte la communication à l'aide de techniques comme
+          le détournement DNS ou l'usurpation d'ARP.
+        </li>
+        <li>
+          Une fois inséré, il peut surveiller, modifier ou injecter des
+          informations dans la communication.
+        </li>
+        <li>
+          L'objectif peut être de voler des informations sensibles comme des
+          identifiants, des mots de passe ou des données bancaires.
+        </li>
+      </ul>
+
+      <h2>Types d'attaques MITM</h2>
+      <ul>
+        <li>
+          <b>Usurpation DNS :</b> L'attaquant redirige le trafic vers un faux
+          site web.
+        </li>
+        <li>
+          <b>Usurpation ARP :</b> Falsifie les adresses réseau pour intercepter
+          le trafic local.
+        </li>
+        <li>
+          <b>Écoute des communications :</b> Capture des données via un réseau
+          Wi-Fi non sécurisé.
+        </li>
+        <li>
+          <b>Attaque SSL Strip :</b> Force une connexion non sécurisée en
+          supprimant le chiffrement SSL/TLS.
+        </li>
+      </ul>
+
+      <h2>Prévention et protection</h2>
+      <ul>
+        <li>
+          Utilisez des connexions sécurisées (HTTPS) et vérifiez les certificats
+          SSL des sites web.
+        </li>
+        <li>Évitez d'utiliser des réseaux Wi-Fi publics sans VPN.</li>
+        <li>Activez le chiffrement WPA3 sur les réseaux Wi-Fi personnels.</li>
+        <li>
+          Surveillez les connexions réseau pour détecter toute activité
+          suspecte.
+        </li>
+        <li>
+          Déployez des outils comme les pare-feux et les systèmes de détection
+          des intrusions (IDS).
+        </li>
+      </ul>
+
+      <button class="back-button" onclick="history.back()">Retour</button>
+
+      <footer>
+        © 2025 - Guide sur les attaques MITM. Tous droits réservés.
+      </footer>
+    </div>
+  </body>
+</html>

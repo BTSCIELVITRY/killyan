@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vine bomb</title>
+    <link rel="stylesheet" href="./css/fish.css" />
+    <meta http-equiv="refresh" content="6; url=/index.html" />
+  </head>
+  <body>
+    <a href="https://neurosama.com" id="goldfishLink">
+      <img id="goldfishImage" src="/image/GoldFishImage.jpg" alt="Goldfish" />
+    </a>
+
+    <script>
+      const goldfishImage = document.getElementById("goldfishImage");
+      const goldfishLink = document.getElementById("goldfishLink");
+
+      goldfishImage.addEventListener("click", function (event) {
+        event.preventDefault();
+
+        const vineBoom = new Audio("./image/vinebomb.mp3");
+
+        vineBoom.play().catch((error) => {
+          console.error("Erreur lors de la lecture de l'audio :", error);
+        });
+
+        vineBoom.onended = function () {
+          window.location.href = goldfishLink.href;
+        };
+      });
+    </script>
+  </body>
+</html>

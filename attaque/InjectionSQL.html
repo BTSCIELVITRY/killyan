@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/attaque.css" />
+    <title>Injection SQL</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Injection SQL (SQL Injection)</h1>
+      <p>
+        L'injection SQL est une vulnérabilité qui permet à un attaquant
+        d'exécuter des commandes malveillantes sur une base de données,
+        compromettant ainsi la sécurité des systèmes.
+      </p>
+
+      <h2>Terminologie</h2>
+      <ul>
+        <li>
+          <b>SQL :</b> Structured Query Language, un langage utilisé pour gérer
+          et interagir avec les bases de données.
+        </li>
+        <li>
+          <b>Requête SQL :</b> Commande envoyée à une base de données pour
+          effectuer une action, comme récupérer ou modifier des données.
+        </li>
+        <li>
+          <b>Injection :</b> Insertion de code malveillant dans un champ
+          utilisateur ou une requête pour altérer son comportement.
+        </li>
+        <li>
+          <b>Base de données :</b> Système de stockage et de gestion des
+          informations.
+        </li>
+        <li>
+          <b>Paramètres :</b> Données envoyées par un utilisateur, souvent
+          intégrées dans les requêtes SQL.
+        </li>
+      </ul>
+
+      <h2>Comment fonctionne une injection SQL ?</h2>
+      <p>
+        Une injection SQL se produit lorsque des entrées utilisateur non
+        sécurisées sont directement intégrées dans des requêtes SQL. Cela permet
+        à un attaquant de manipuler ou détourner les requêtes prévues.
+      </p>
+      <ul>
+        <li>Un formulaire ou un champ utilisateur reçoit une saisie.</li>
+        <li>
+          Si l'entrée n'est pas validée, elle est directement intégrée dans une
+          requête SQL.
+        </li>
+        <li>
+          L'attaquant insère des commandes SQL malveillantes pour accéder,
+          modifier ou supprimer des données sensibles.
+        </li>
+        <li>
+          La base de données exécute ces commandes comme si elles étaient
+          légitimes.
+        </li>
+      </ul>
+
+      <h2>Exemples d'attaques par injection SQL</h2>
+      <ul>
+        <li>
+          <b>Extraction de données :</b> Un attaquant peut récupérer des
+          informations sensibles, comme des identifiants ou des mots de passe.
+        </li>
+        <li>
+          <b>Modification de données :</b> Altération ou suppression des
+          enregistrements dans une base de données.
+        </li>
+        <li>
+          <b>Exécution de commandes administratives :</b> Obtention d'un
+          contrôle complet sur le système.
+        </li>
+        <li>
+          <b>Dump de la base de données :</b> Téléchargement complet de la base
+          de données pour un usage malveillant.
+        </li>
+      </ul>
+
+      <h2>Prévention et protection</h2>
+      <ul>
+        <li>
+          Utilisez des requêtes préparées (Prepared Statements) avec des
+          paramètres liés pour éviter l'exécution de commandes non prévues.
+        </li>
+        <li>
+          Validez et assainissez toutes les entrées utilisateur avant de les
+          traiter.
+        </li>
+        <li>
+          Désactivez les erreurs détaillées pour empêcher les attaquants de
+          récolter des informations sur le système.
+        </li>
+        <li>
+          Configurez des droits d'accès limités pour les comptes de la base de
+          données.
+        </li>
+        <li>
+          Adoptez une politique de sécurité basée sur le principe du moindre
+          privilège.
+        </li>
+      </ul>
+
+      <button class="back-button" onclick="history.back()">Retour</button>
+
+      <footer>
+        © 2025 - Guide sur les vulnérabilités d'injection SQL. Tous droits
+        réservés.
+      </footer>
+    </div>
+  </body>
+</html>

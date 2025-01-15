@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="./css/menu.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="menu">
+        <div class="dropdown">
+          <button class="dropdown-btn">Attaque</button>
+          <div class="dropdown-content">
+            <a href="./attaque/Phishing.html">Phishing</a>
+            <a href="./attaque/DDoS.html">DDoS</a>
+            <a href="./attaque/InjectionSQL.html">Injection SQL</a>
+            <a href="./attaque/0Day.html">Zero-Day</a>
+            <a href="./attaque/MITM.html">MITM</a>
+            <a href="./attaque/Ransomware.html">Ransomware</a>
+            <a href="./attaque/Spyware.html">Spyware</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">Défense</button>
+          <div class="dropdown-content">
+            <a href="/défense/COMCYBER.html">COMCYBER</a>
+            <a href="/défense/ANSSI.html">ANSSI</a>
+            <a href="/défense/certicom.html">Certicom</a>
+            <a href="/défense/antivirus.html">Antivirus</a>
+            <a href="/défense/pare-feu.html">Pare-feu</a>
+            <a href="/défense/VPN.html">VPN</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropdown-btn">Attaque recensée</button>
+          <div class="dropdown-content">
+            <a href="/recensée/assurance retraite.html">Assurance retraite</a>
+            <a href="/recensée/terraleak.html">TeraLeak GameFreak</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="back-button" onclick="history.back()">Retour</button>
+
+    <!-- Bouton caché pour Rickroll -->
+    <button
+      id="rickroll-btn"
+      class="rickroll-btn"
+      onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';"
+    >
+      Rickroll
+    </button>
+
+    <script>
+      // Affiche le bouton Rickroll après 3 secondes
+      setTimeout(function () {
+        document.getElementById("rickroll-btn").style.display = "block";
+      }, 3000);
+    </script>
+  </body>
+</html>
