@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(/image/panorama.png) no-repeat center center fixed;
+  background: url(panorama.png) no-repeat center center fixed;
   background-size: cover;
   font-family: Arial, sans-serif;
 }
