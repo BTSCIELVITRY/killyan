@@ -45,7 +45,10 @@
 
     <button class="back-button" onclick="history.back()">Retour</button>
 
-    <!-- Bouton caché pour Rickroll -->
+    <div class="contact-link">
+      <a href="./contact.html">Contact</a>
+    </div>
+
     <button
       id="rickroll-btn"
       class="rickroll-btn"
@@ -55,7 +58,6 @@
     </button>
 
     <script>
-      // Affiche le bouton Rickroll après 3 secondes
       setTimeout(function () {
         document.getElementById("rickroll-btn").style.display = "block";
       }, 3000);

@@ -176,3 +176,35 @@ body {
     padding: 6px 12px;
   }
 }
+
+.contact-link {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.contact-link a {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #673ab7;
+  text-decoration: none;
+  border: 2px solid #673ab7;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: inline-block;
+  background: #ffffff;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-link a:hover {
+  background: #673ab7;
+  color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(103, 58, 183, 0.4);
+}
+
+/* Responsive styles pour mobile */
+@media (max-width: 768px) {
+  .contact-link a {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}
